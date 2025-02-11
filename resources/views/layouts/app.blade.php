@@ -20,7 +20,8 @@
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-transparent">
+                <header class="bg-transparent "> 
+                    
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
@@ -30,6 +31,9 @@
             <main>
                 {{ $slot }}
             </main>
+            <footer class="bg-blue-300 text-white text-center py-4">
+                <p>&copy; 2025 MyRobo. All rights reserved.</p>
+            </footer>
         </div>
     </body>
 </html>

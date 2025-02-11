@@ -23,7 +23,10 @@ Route::get('/competition', function () {
 
 Route::get('/mazesolving', function () {
     return view('mazesolving.index');
+    
 })->middleware(['auth', 'verified'])->name('mazesolving');
+
+
 
 
 require __DIR__.'/auth.php';
